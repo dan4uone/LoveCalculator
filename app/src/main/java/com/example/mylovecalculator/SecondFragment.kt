@@ -8,7 +8,9 @@ import android.view.ViewGroup
 import androidx.navigation.NavController
 import androidx.navigation.fragment.NavHostFragment
 import com.example.mylovecalculator.databinding.FragmentSecondBinding
+import com.example.mylovecalculator.model.LoveModel
 
+@Suppress("DEPRECATION")
 class SecondFragment : Fragment() {
     private lateinit var binding: FragmentSecondBinding
     private lateinit var navController: NavController
@@ -35,17 +37,14 @@ class SecondFragment : Fragment() {
     }
 
     private fun argumentsAndSet() {
-        val fName = arguments?.getString("fName")
-        val sName = arguments?.getString("sName")
-        val percent = arguments?.getString("percentage")
-        val result = arguments?.getString("result")
+        val model: LoveModel = arguments?.getSerializable("key") as LoveModel
+        with(binding) {
+            firstName.text = model.fName
+            secondName.text = model.sName
+            result.text = model.result
+            percent.text = model.percentage
 
-
-        binding.firstName.text = fName
-        binding.secondName.text = sName
-        binding.percent.text = "$percent%"
-        binding.result.text = result
-
+        }
     }
 
 
