@@ -1,16 +1,18 @@
-package com.example.mylovecalculator
+package com.example.mylovecalculator.ui
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.core.os.bundleOf
 import androidx.navigation.NavController
+import androidx.navigation.findNavController
 import androidx.navigation.fragment.NavHostFragment
+import androidx.navigation.fragment.findNavController
 import com.example.mylovecalculator.databinding.FragmentSecondBinding
 import com.example.mylovecalculator.model.LoveModel
 
-@Suppress("DEPRECATION")
 class SecondFragment : Fragment() {
     private lateinit var binding: FragmentSecondBinding
     private lateinit var navController: NavController
@@ -45,7 +47,7 @@ class SecondFragment : Fragment() {
             percent.text = model.percentage
 
         }
-    }
 
 
-}
+
+    }   }

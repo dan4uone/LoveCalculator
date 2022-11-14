@@ -2,4 +2,11 @@
     <string name="app_name">MyLoveCalculator</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="history">history</string>
+    <string name="first_name">first name</string>
+    <string name="percent">%</string>
+    <string name="good_choice">Good choice</string>
+    <string name="second_name">second name</string>
+    <string name="again">Again</string>
+    <string name="start">Start</string>
 </resources>

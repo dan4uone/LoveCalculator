@@ -6,7 +6,7 @@
 android:background="@color/purple_700"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".SecondFragment">
+    tools:context=".ui.SecondFragment">
 
 
 
@@ -15,7 +15,7 @@ android:background="@color/purple_700"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="200dp"
-        android:text="first name"
+        android:text="@string/first_name"
         android:textColor="@color/red"
         android:textSize="20sp"
         android:textAlignment="center"
@@ -29,7 +29,7 @@ android:background="@color/purple_700"
         android:layout_marginTop="50dp"
         android:textColor="@color/red"
         android:textSize="20sp"
-        android:text="%"
+        android:text="@string/percent"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="@id/firstName"
         app:layout_constraintStart_toStartOf="@id/firstName"
@@ -39,7 +39,7 @@ android:background="@color/purple_700"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
-        android:text="Good choice"
+        android:text="@string/good_choice"
         android:textColor="@color/white"
         android:textSize="24sp"
         android:textStyle="bold"
@@ -52,7 +52,7 @@ android:background="@color/purple_700"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
-        android:text="second name"
+        android:text="@string/second_name"
         android:textColor="@color/red"
         android:textSize="20sp"
         android:textAlignment="center"
@@ -67,10 +67,15 @@ android:background="@color/purple_700"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:backgroundTint="#710CD6"
-        android:text="Again"
+        android:text="@string/again"
         app:cornerRadius="12dp"
         android:textAllCaps="true"
         app:layout_constraintEnd_toEndOf="@id/secondName"
         app:layout_constraintStart_toStartOf="@id/secondName"
         app:layout_constraintTop_toBottomOf="@id/secondName" />
+
+
+
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
