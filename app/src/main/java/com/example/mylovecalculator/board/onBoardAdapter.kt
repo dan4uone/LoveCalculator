@@ -2,6 +2,7 @@ package com.example.mylovecalculator
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
+import android.widget.ImageView
 import androidx.core.view.isVisible
 import androidx.recyclerview.widget.RecyclerView
 import com.example.mylovecalculator.databinding.ItemOnboardBinding
@@ -12,7 +13,7 @@ class OnBoardAdapter(private val list: ArrayList<OnBoardModel>) :
    inner class OnBoardViewHolder(private val binding: ItemOnboardBinding) :
         RecyclerView.ViewHolder(binding.root) {
         fun onBind(model: OnBoardModel) {
-            binding.ivOnBoarding.setImageResource(model.image)
+            binding.animationView.setAnimation(model.image)
             binding.tvTittle.text = model.tittle
             binding.tvDescription.text = model.description
 binding.btnGo.isVisible=adapterPosition==list.size
@@ -40,5 +41,7 @@ binding.btnGo.isVisible=adapterPosition==list.size
 
 
 }
+
+
 
 
