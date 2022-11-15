@@ -17,7 +17,8 @@ class OnBoardingFragment : Fragment(){
 
     private lateinit var binding: FragmentOnBoardBinding
     private val list = arrayListOf<OnBoardModel>()
-
+    @Inject
+private lateinit var prefs: Prefs
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -32,21 +33,21 @@ class OnBoardingFragment : Fragment(){
 
         list.add(
             OnBoardModel(
-                R.drawable.love_calculate1,
+                R.raw.love1,
                 " hello",
                 " hi"
             )
         )
         list.add(
             OnBoardModel(
-                R.drawable.love_calculate2,
+                R.raw.love2,
                 "any",
                 "go"
             )
         )
         list.add(
             OnBoardModel(
-                R.drawable.love_calculate3,
+                R.raw.love3,
                 "text",
                 "net",
 
@@ -55,7 +56,7 @@ class OnBoardingFragment : Fragment(){
         )
         list.add(
             OnBoardModel(
-                R.drawable.love_calculate1,
+                R.raw.love4,
                 "text",
                 "" +
                         "look"

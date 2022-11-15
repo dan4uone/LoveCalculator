@@ -64,7 +64,7 @@ dependencies {
 
     implementation"androidx.viewpager2:viewpager2:1.0.0"
 
-
+    implementation 'com.airbnb.android:lottie:5.2.0'
 
     implementation'com.tbuonomo:dotsindicator:4.3'
     def room_version = "2.4.3"
