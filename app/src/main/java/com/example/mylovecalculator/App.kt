@@ -18,6 +18,7 @@ class App: Application() {
 
         appDataBase = Room.databaseBuilder(applicationContext,AppDataBase::class.java,"love_base").
         allowMainThreadQueries().build()
+
     }
 }
 
